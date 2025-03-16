@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework Session 6</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>Fill out the following form for your annual review:</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" required /><br /><br />
+
+      <label for="role">Role:</label>
+      <select name="role" id="role" required>
+        <option value="junior">junior</option>
+        <option value="senior">senior</option>
+        <option value="leader">leader</option></select
+      ><br /><br />
+
+      <button id="submit" type="submit" onclick="submitHandler(event)">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
