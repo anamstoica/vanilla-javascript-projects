@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GCC Session 6 Homework</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1 onclick="alert('Hello')">Survey Form</h1>
+    <p>Fill out the following form</p>
+
+    <form>
+      <!-- Name -->
+      <label for="name">Name</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Please enter your name."
+      /><br /><br />
+
+      <!-- Age -->
+      <label for="age">Age</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        required
+        placeholder="Please enter your age."
+      /><br /><br />
+
+      <!-- Salary -->
+      <label for="salary">Salary</label><br />
+      <input
+        type="number"
+        id="salary"
+        name="salary"
+        required
+        placeholder="Please enter your salary."
+      /><br /><br />
+
+      <!-- Role -->
+      <label for="role">Role</label><br />
+      <select name="role" id="role" required>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+        <option value="leader">Lead</option></select
+      ><br /><br />
+
+      <!-- Submit -->
+      <button id="submit" type="submit" onclick="submitHandler(event)">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
